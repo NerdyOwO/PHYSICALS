@@ -1,3 +1,14 @@
 body {
-background-color: red;
+  background-image: url("https://i.pinimg.com/474x/89/a9/c6/89a9c6ce4e5aad93ce2ef63e5ff5778d.jpg");
+  background-color: white;
+}
+
+h1 {
+  color: black;
+}
+h2 {
+  color: yellow;
+}
+h3 {
+  color: black;
 }
