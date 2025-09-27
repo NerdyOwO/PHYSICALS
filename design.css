@@ -1,13 +1,12 @@
 body {
-  background-color: #FCEF91;
+	background-color: #FCEF91;
 }
 
-h1 {
-  color: black;
-}
-h2 {
-  color: yellow;
-}
-h3 {
-  color: black;
+.tab {
+	background-color: #EA2F14;
+	height: 100px;
+	width:1000px;
+	margin: 0 auto;
+	border-radius: 20px;
+
 }
