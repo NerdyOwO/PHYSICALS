@@ -1,12 +1,32 @@
 body {
-	background-color: #FCEF91;
+	background-color: white;
 }
 
-.tab {
-	background-color: #EA2F14;
-	height: 100px;
-	width:1000px;
-	margin: 0 auto;
-	border-radius: 20px;
+.tab{
+ position: fixed;
+  top: 0;
+  width: 100%; 
+  background-color: orange;
+  overflow: hidden; 
+  z-index: 100; 
+  display: flex; 
+  justify-content: center; 
+}
 
+.tab a {
+  float:left;
+  background-size: cover;
+  color: #f2f2f2;
+  padding: 20;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+  display: inline-block;
+  
+  transition: background-color 0.1s ease-in-out, padding 0.1s ease-in-out;
+}
+a:hover{
+	color: orange;
+	background-color: white;
 }
