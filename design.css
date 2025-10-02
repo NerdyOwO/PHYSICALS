@@ -1,12 +1,11 @@
-body {
-	margin: 0;
-	padding: 0;
-	font-family: "Trebuchet MS", Helvetica, sans-serif;
+body{
+margin: 0;
+padding: 0;
+font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 
 .webname {
-	color: white;
-	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	color: white
 	font-size: 14px;
 }
 
@@ -18,38 +17,43 @@ h1 {
 	color: darkorange;
 }
 
-.tab{
+.tab {
 	position: fixed;
 	top: 0;
-	width: 100%; 
+	width: 100%;
 	background: orange;
-	overflow: hidden; 
-	z-index: 100; 
+	overflow: hidden;
+	z-index: 100;
 	display: flex;
-	padding-left: 50px;
 }
 
-.tab a {
-	float:center;
-	background-size: cover;
-	color: #f2f2f2;
-	padding: 20px;
-	text-decoration: none;
-	font-weight: bold;
-	font-size: 20px;
-	display: inline-block;
-	justify-content: center; 
-	  
-	transition: background-color 0.1s ease-in-out, padding 0.1s ease-in-out;
+.tab img {
+	height:80px;
+	width: 144px;
 }
-a:hover{
+
+	.tab a {
+		float: center;
+		color: #f2f2f2;
+		padding: 20px;
+		text-decoration: none;
+		font-weight: bold;
+		font-size: 20px;
+		margin:5px;
+		justify-content: center;
+		transition: background-color 0.1s ease-in-out, padding 0.1s ease-in-out;
+	}
+
+a:hover {
 	color: orange;
 	background-color: white;
 }
 
 .banner {
 	display: grid;
+	max-width:100%;
 }
+
 #brp {
 	margin-top: 10px;
 	width: 100%;
@@ -58,51 +62,44 @@ a:hover{
 
 
 .geninfo {
-		
 	background-color: darkorange;
-	padding:10px;
+	padding: 10px;
 	margin: 10px;
 	display: grid;
 	border-radius: 10px;
-
 }
 
-.geninfo #top {
-	color: white;
-	margin: auto;
-}
-.geninfo #overp{
-	left:0px;
-	padding-top: 20px;
-	height:300px;
-	width:300px;
+	.geninfo #top {
+		color: white;
+		margin: auto;
+	}
 
-}
+	.geninfo #overp {
+		left: 0px;
+		padding-top: 20px;
+		height: 300px;
+		width: 300px;
+	}
 
 
 
 
 .intro {
-	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
 	margin: 20px auto;
-	
-}
-.intro p{
-	margin: 30px;
-	color:orange;
-	font-size:large;
-	font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 
-.container:hover {
-		transform: scale(1.02);
-		transform-style: preserve-3d;
-		transition: transform 0.1s ease-in-out;
-	}
-	
+#vari {
+	border-radius: 10px;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+
 .container {
 	display: flex;
 	flex-direction: row;
@@ -111,15 +108,71 @@ a:hover{
 	margin: 50px auto;
 	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 	transition: transform .2s ease-in-out;
-	background-color: orange ;
+	background-color: orange;
 	padding: 40px;
 	border-radius: 20px;
 	max-width: 1100px;
-	
 }
-.container p{
+
+	.container p {
+		margin: 30px;
+		color: white;
+		font-size: large;
+	}
+
+	.container:hover {
+		transform: scale(1.02);
+	}
+
+
+#title {
+	font-size: 3em;
+	font-weight: bold;
+	text-align:center;
+	color:darkorange;
+}
+
+#steps {
+	font-size: 2em;
+	font-weight: bold;
+	text-align: center;
+}
+
+.container2 {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	margin: 50px auto;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+	transition: transform .2s ease-in-out;
+	background-color: orange;
+	padding: 40px;
+	border-radius: 20px;
+	max-width: 1100px;
+}
+	.container2 p {
 	margin: 30px;
-	color:white;
-	font-size:large;
-	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	color: white;
+	font-size: large;
+}
+
+	.container2:hover {
+	transform: scale(1.02);
+}
+
+.copyright {
+	position: flex;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 70px;
+	background-color: #0e0000a8;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0 10px;
+}
+.copyright h4{
+	padding-right:10px;
 }
