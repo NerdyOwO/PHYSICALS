@@ -48,22 +48,15 @@ if (toTheTop) {
   });
 }
 
-function smoothScrollToTop() {
-  const start = window.scrollY;
-  const duration = 600; 
-  const startTime = performance.now();
+toTheTop.addEventListener("click", () => {
+  const scrollDuration = 600; 
+  const scrollStep = -window.scrollY / (scrollDuration / 16);
 
-  function scrollStep(currentTime) {
-    const elapsed = currentTime - startTime;
-    const progress = Math.min(elapsed / duration, 1); 
-    const ease = 1 - Math.pow(1 - progress, 3); 
-
-    window.scrollTo(0, start * (1 - ease));
-
-    if (progress < 1) {
-      requestAnimationFrame(scrollStep);
+  const scrollInterval = setInterval(() => {
+    if (window.scrollY !== 0) {
+      window.scrollBy(0, scrollStep);
+    } else {
+      clearInterval(scrollInterval);
     }
-  }
-
-  requestAnimationFrame(scrollStep);
-}
+  }, 16); 
+});
