@@ -38,7 +38,7 @@ const toTheTop = document.getElementById("tothetop");
 
 if (toTheTop) {
   window.addEventListener("scroll", () => {
-    if (window.scrollY > 1000) {
+    if (window.scrollY > 100) {
       toTheTop.style.display = "block";
     } else {
       toTheTop.style.display = "none";
@@ -58,3 +58,4 @@ toTheTop.addEventListener("click", () => {
   }, 16); 
   });
 }
+
