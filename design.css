@@ -224,30 +224,28 @@ h1 {
 	width: 500px;
 }
 
-.container3 {
-	display: flex;
-	text-align: justify;
-	text-justify: inter-word;
-	flex-direction: row;
-	justify-content: center;
-	margin: auto;
-	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-	transition: transform .2s ease-in-out;
-	background-color: orange;
-	border-radius: 20px;
-	max-width: 1100px;
+/* up Button */
+#tothetop {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  background-color: orange;
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  display: none; /* hidden by default */
+  transition: background 0.3s, transform 0.2s;
+  z-index: 300;
 }
 
-	.container3 p {
-		margin:50px;
-		color: white;
-		font-size: 15px;
-	}
+#tothetop:hover {
+  background-color: darkorange;
+  transform: scale(1.1);
+}
 
-	.container3:hover {
-		transform: scale(1.02);
-	}
-
-	h2{
-		color:white;
-	}
