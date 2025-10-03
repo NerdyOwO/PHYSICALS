@@ -35,6 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
+// Back to Top Button
 const toTheTop = document.getElementById("tothetop");
 
 if (toTheTop) {
@@ -43,6 +44,26 @@ if (toTheTop) {
   });
 
   toTheTop.addEventListener("click", () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    smoothScrollToTop();
   });
+}
+
+function smoothScrollToTop() {
+  const start = window.scrollY;
+  const duration = 600; 
+  const startTime = performance.now();
+
+  function scrollStep(currentTime) {
+    const elapsed = currentTime - startTime;
+    const progress = Math.min(elapsed / duration, 1); 
+    const ease = 1 - Math.pow(1 - progress, 3); 
+
+    window.scrollTo(0, start * (1 - ease));
+
+    if (progress < 1) {
+      requestAnimationFrame(scrollStep);
+    }
+  }
+
+  requestAnimationFrame(scrollStep);
 }
