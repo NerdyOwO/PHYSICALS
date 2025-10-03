@@ -7,8 +7,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
       const targetId = this.getAttribute("data-target");
       const page = this.getAttribute("data-page");
-
-     
       const currentPage = window.location.pathname.split("/").pop() || "index.html";
 
       if (page && page !== currentPage) {
