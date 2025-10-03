@@ -265,11 +265,8 @@ color:white;
   background-color: orange;
   color: white;
   font-size: 22px;
-  font-weight: bold;
   cursor: pointer;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-  display: none; /* hidden by default */
-  transition: background 0.3s, transform 0.2s;
+  display: none;   
   z-index: 300;
 }
 
