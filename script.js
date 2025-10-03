@@ -39,23 +39,33 @@ document.addEventListener("DOMContentLoaded", () => {
 const toTheTop = document.getElementById("tothetop");
 
 if (toTheTop) {
-  
+
   window.addEventListener("scroll", () => {
     toTheTop.style.display = window.scrollY > 200 ? "block" : "none";
   });
 
   
   toTheTop.addEventListener("click", () => {
-    const scrollDuration = 600; 
-    const scrollInterval = 15; 
-    const scrollStep = window.scrollY / (scrollDuration / scrollInterval);
-
-    const scrollTimer = setInterval(() => {
-      if (window.scrollY > 0) {
-        window.scrollBy(0, -scrollStep);
-      } else {
-        clearInterval(scrollTimer);
-      }
-    }, scrollInterval);
+    smoothScrollToTop();
   });
+}
+
+function smoothScrollToTop() {
+  const start = window.scrollY;
+  const duration = 600;
+  const startTime = performance.now();
+
+  function scrollStep(currentTime) {
+    const elapsed = currentTime - startTime;
+    const progress = Math.min(elapsed / duration, 1); 
+    const ease = 1 - Math.pow(1 - progress, 3); 
+
+    window.scrollTo(0, start * (1 - ease));
+
+    if (progress < 1) {
+      requestAnimationFrame(scrollStep);
+    }
+  }
+
+  requestAnimationFrame(scrollStep);
 }
