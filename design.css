@@ -249,3 +249,30 @@ h1 {
   transform: scale(1.1);
 }
 
+.container3 {
+	display: flex;
+	text-align: justify;
+	text-justify: inter-word;
+	flex-direction: row;
+	justify-content: center;
+	margin: auto;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+	transition: transform .2s ease-in-out;
+	background-color: orange;
+	border-radius: 20px;
+	max-width: 1100px;
+}
+
+	.container3 p {
+		margin:50px;
+		color: white;
+		font-size: 15px;
+	}
+
+	.container3:hover {
+		transform: scale(1.02);
+	}
+
+	h2{
+		color:white;
+	}
