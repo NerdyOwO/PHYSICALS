@@ -9,10 +9,10 @@ document.addEventListener("DOMContentLoaded", () => {
       const page = this.getAttribute("data-page");
 
       if (page && page !== window.location.pathname.split("/").pop()) {
-
+        
         window.location.href = `${page}#${targetId}`;
       } else {
-
+        
         const targetElement = document.getElementById(targetId);
         if (targetElement) {
           targetElement.scrollIntoView({ behavior: "smooth" });
@@ -21,41 +21,14 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-
+ 
   if (window.location.hash) {
     const id = window.location.hash.substring(1);
     const el = document.getElementById(id);
     if (el) {
-      el.scrollIntoView({ behavior: "smooth" });
+      setTimeout(() => {
+        el.scrollIntoView({ behavior: "smooth" });
+      }, 100); 
     }
   }
 });
-
-
-// Back to Top Button
-
-const toTheTop = document.getElementById("tothetop");
-
-if (toTheTop) {
-  window.addEventListener("scroll", () => {
-    if (window.scrollY > 100) {
-      toTheTop.style.display = "block";
-    } else {
-      toTheTop.style.display = "none";
-    }
-  });
-
-toTheTop.addEventListener("click", () => {
-  const scrollDuration = 600; 
-  const scrollStep = -window.scrollY / (scrollDuration / 16);
-
-  const scrollInterval = setInterval(() => {
-    if (window.scrollY !== 0) {
-      window.scrollBy(0, scrollStep);
-    } else {
-      clearInterval(scrollInterval);
-    }
-  }, 16); 
-  });
-}
-
