@@ -1,104 +1,99 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<title> UVLux </title>
-	<link rel="stylesheet" href="design.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UVLux - Overview</title>
+  <link rel="stylesheet" href="design.css">
 </head>
 <body>
-	<div class="tab">
-		<img src="img\logoo.png" />
-		<a href="index.html">Overview </a>
-		<a href="health.html">Health</a>
-		<a href="ref.html">References</a>
-	</div>
+  <!-- NAVBAR -->
+  <div class="navbar">
+    <img src="img\logoo.png" />
+    <!-- Overview -->
+      <div class="dropdown">
+          
+          <a href="#">Overview ▼</a>
+          <div class="dropdown-content">
+              <a href="#" class="nav-link" data-target="ingredients">Ingredients</a>
+              <a href="#" class="nav-link" data-target="proper-usage">Proper Usage</a>
+          </div>
+      </div>
 
-	<div class="banner">
-		<img src="img\ban.png" id="brp" />
-	</div>
-	</br>
-	<p id="title"> Overview </p>
-	<div class="container" "
-		<div class="para">
-			<div id="intro">
+    <!-- Health -->
+    <div class="dropdown">
+      <a href="health.html">Health ▼</a>
+      <div class="dropdown-content">
+        <a href="#" class="nav-link" data-target="nutrition" data-page="health.html">Nutrition</a>
+        <a href="#" class="nav-link" data-target="tips" data-page="health.html">Tips</a>
+      </div>
+    </div>
 
-				<p id="nilalaman" align="center">
-					Ultraviolet (UV) radiation is strongly linked to the worsening of melasma, making photoprotection a central strategy in managing the condition. Photoprotection spans a range of interventions, from topical sunscreens and physical barriers to oral antioxidants and lifestyle changes. <br> <br> <br>
-					Evidence from clinical studies supports this approach. For example, research in India showed that patients with melasma who used a broad-spectrum sunscreen (SPF 19, PA+++) for 12 weeks experienced significant improvements.<br> <br> <br>
-					Ultimately, robust photoprotection tailored to melasma not only prevents flare-ups but also empowers patients with practical tools to cope with UV-related challenges, improving both treatment results and overall quality of life.<br> <br><br>
-				</p>
-			</div>
-			<div id="var">
-				<img src="img\variety.png" id="vari" padding-left="30px" width="500px" height="500px" justify-content="center" align-items="center">
+    <!-- References -->
+    <div class="dropdown">
+      <a href="ref.html">References</a>
+    </div>
+  </div>
+  <div class="banner">
+    <img src="img/ban.png" id="brp" />
+  </div>
 
-			</div>
+  <!-- Overview Content -->
+  <section id="overview">
+    <h1>Overview</h1>
 
-		</div>
-	</div>
+    <div class="container">
+        <div class="para">
+            <div id="intro">
+                <p id="nilalaman" align="center">
+                    Ultraviolet (UV) radiation is strongly linked to the worsening of melasma,
+                    making photoprotection a central strategy in managing the condition.
+                    Photoprotection spans a range of interventions, from topical sunscreens
+                    and physical barriers to oral antioxidants and lifestyle changes. <br><br>
+                    Evidence from clinical studies supports this approach. For example, research in
+                    India showed that patients with melasma who used a broad-spectrum sunscreen
+                    (SPF 19, PA+++) for 12 weeks experienced significant improvements. <br><br>
+                    Ultimately, robust photoprotection tailored to melasma not only prevents flare-ups
+                    but also empowers patients with practical tools to cope with UV-related challenges,
+                    improving both treatment results and overall quality of life.
+                </p>
+            </div>
 
-	<div class="container">
-		<div id="overp">
-			<img src="img\sun.png" alt="Sunscreen">
-		</div>
-		<div class="para">
+        </div>
+        <div class="var">
+            <img src="img/variety.png" id="vari" />
+        </div>
+    </div>
 
-			<p> <b> <big>Ingredients </big></b></br> </p>
+    <div class="container" id="ingredients">
+      <div id="overp">
+        <img src="img/sun.png" alt="Sunscreen">
+      </div>
+      <div class="para">
+        <p><b><big>Ingredients</big></b></p>
+        <p>SPF 47 PA+++ broad spectrum protection against UVA & UVB.</p>
+        <p>Mineral-based (Titanium Dioxide & Zinc Oxide) with Niacinamide and Adenosine.</p>
+        <p>Alpha Melight to help reduce dark spots and hyperpigmentation (melasma).</p>
+        <p>Water and sweat resistant, suitable for day-long exposure.</p>
+        <p>Lightweight, non-sticky, non-greasy texture.</p>
+        <p>Fragrance-free, coral reef-friendly, dermatologically tested.</p>
+      </div>
+    </div>
 
-			<p> SPF 47 PA+++  broad spectrum protection against UVA & UVB. </br> </p>
+    <h1 id="proper-usage">Proper Usage</h1>
+    <div class="container2"><p id="steps">1) Apply 15–20 minutes before sun exposure for full absorption.</p></div>
+    <div class="container2"><p id="steps">2) Follow the 2-finger rule: two strips of sunscreen on index and middle finger, apply evenly.</p></div>
+    <div class="container2"><p id="steps">3) Don’t forget often-missed areas: ears, neck, and hands.</p></div>
+    <div class="container2"><p id="steps">4) Reapply every 2 hours or after swimming/sweating/towel-drying.</p></div>
+    <div class="container2"><p id="steps">5) Apply as final skincare step in the morning before or after makeup.</p></div>
+    <div class="container2"><p id="steps">6) Daily use is crucial—apply even on cloudy days or indoors (UV penetrates glass).</p></div>
+  </section>
 
-			<p> Mineral-based (Titanium Dioxide & Zinc Oxide) with added serum actives like Niacinamide and Adenosine. </br> </p>
+  <footer class="copyright">
+    <h4>Copyright © 2025 UVLux. All rights reserved.</h4>
+    <p>All content on this site is protected by copyright law.</p>
+  </footer>
 
-			<p>  Alpha Melight to help reduce dark spots and hyperpigmentation (such as melasma). </br> </p>
-
-			<p>  Water and sweat resistant suitable for day-long exposure. </br> </p>
-
-			<p>  Lightweight, non-sticky, and non-greasy texture. </br> </p>
-
-			<p> Fragrance-free, coral reef-friendly, and dermatologically tested. </br> </p>
-
-		</div>
-	</div>
-	<p id="title"> Proper Usage </p>
-
-	<div class="container2">
-		<p id="steps">
-			1)   Apply 15–20 minutes before sun exposure to allow full absorption. </br>
-		</p>
-	</div>
-	<div class="container2">
-		<p id="steps">
-			2)   Follow the 2-finger rule: squeeze two strips of sunscreen on your index and middle finger, then apply evenly to your face and neck. </br>
-		</p>
-	</div>
-	<div class="container2">
-		<p id="steps">
-			3)   Don’t forget often-missed areas: ears, back of the neck, and hands. </br>
-		</p>
-	</div>
-	<div class="container2">
-		<p id="steps">
-			4)   Reapply every 2 hours or immediately after swimming, sweating, or towel-drying. </br>
-		</p>
-	</div>
-	<div class="container2">
-		<p id="steps">
-			5)   Apply this product as your final skincare step in the morning before or after makeup application. </br>
-		</p>
-	</div>
-	<div class="container2">
-		<p id="steps">
-			6)  Daily use is crucial—apply sunscreen even on overcast days or while indoors, as UV rays can penetrate glass. </br>
-		</p>
-	</div>
-
-	<footer class="copyright">
-		<br>
-		<br>
-		<br>
-		<br>
-		<h4>Copyright © 2025 UVLux. All rights reserved.<br></h4>
-		<p>
-			<br>All content on this site is protected by copyright law and may not be reproduced, distributed, or used without express <br>permission from SciHub. Unauthorized use or reproduction of materials on this site may result in legal action.<br><br>
-		</p>
-
-	</footer>
+  <script src="script.js"></script>
 </body>
 </html>
